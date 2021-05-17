@@ -1,0 +1,91 @@
+/* основной цвет текста  #212121;
+цвет текста в акценте background: #FFFFFF;
+цвет реакции акцента background: #2196F3;
+цвет параграфом и ссылок background: #757575; */
+:root {
+  --primary-text-color: #212121;
+  --general-accent-color: #ffffff;
+  --color-of-reaction: #2196f3;
+  --paragraph-color: #757575: 
+}
+
+body {
+  background-color: var(--general-accent-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+/* оформление хедера */
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--color-of-reaction);
+}
+
+.nav-due-site {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+}
+.nav-current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--color-of-reaction);
+}
+
+.link {
+  color: var(--paragraph-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--color-of-reaction);
+}
+
+/* кнопки навигации портфолио */
+.button-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.button-portfolio:hover {
+  background-color: var(--color-of-reaction);
+  color: var(--general-accent-color);
+}
+
+/* основной контент  */
+.content-title {
+   font-size: 18px;
+  line-height: 2;
+}
+.content-description {
+  color: var(--paragraph-color);
+font-size: 16px;
+line-height: 1.9;}
+
+
+/* оформление подвала */
+.logo-podval {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--general-accent-color);
+}
+.link-podval {
+  color: var(--general-accent-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.link-podval:hover,
+.link-podval:focus {
+ color: var(--color-of-reaction);
+}
+.adress-podval {
+font-size: 14px;
+line-height: 1.7;
+color: var(--general-accent-color);
+}
