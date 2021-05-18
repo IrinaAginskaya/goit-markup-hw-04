@@ -6,7 +6,7 @@
   --primary-text-color: #212121;
   --general-accent-color: #ffffff;
   --color-of-reaction: #2196f3;
-  --paragraph-color: #757575: 
+  --paragraph-color: #757575;
 }
 
 body {
@@ -38,10 +38,73 @@ body {
 
 .link {
   color: var(--paragraph-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .link:hover,
 .link:focus {
   color: var(--color-of-reaction);
+}
+
+/* Основная страница */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--general-accent-color);
+}
+
+.main-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--general-accent-color);
+  background-color: var(--color-of-reaction);
+}
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--paragraph-color);
+  color: var(--primary-text-color);
+}
+
+/* Основная страница описание деятельности */
+
+.about-us-list {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.about-us-description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--paragraph-color);
+}
+
+.about-work-title {
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+}
+
+.our-team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+}
+
+.team-names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-text-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--paragraph-color);
 }
 
 /* кнопки навигации портфолио */
@@ -51,21 +114,22 @@ body {
   line-height: 1.6;
   cursor: pointer;
 }
-.button-portfolio:hover {
+.button-portfolio:hover,
+.button-portfolio:focus {
   background-color: var(--color-of-reaction);
   color: var(--general-accent-color);
 }
 
 /* основной контент  */
 .content-title {
-   font-size: 18px;
+  font-size: 18px;
   line-height: 2;
 }
 .content-description {
   color: var(--paragraph-color);
-font-size: 16px;
-line-height: 1.9;}
-
+  font-size: 16px;
+  line-height: 1.9;
+}
 
 /* оформление подвала */
 .logo-podval {
@@ -82,10 +146,10 @@ line-height: 1.9;}
 }
 .link-podval:hover,
 .link-podval:focus {
- color: var(--color-of-reaction);
+  color: var(--color-of-reaction);
 }
 .adress-podval {
-font-size: 14px;
-line-height: 1.7;
-color: var(--general-accent-color);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--general-accent-color);
 }
