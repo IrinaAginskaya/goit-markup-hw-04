@@ -13,7 +13,20 @@ body {
   background-color: var(--general-accent-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
+
+/* убрала маркеры в списках*/
+.list {
+  list-style: none;
+}
+
+/* убрала почеркивание в ссылках */
+
+a {
+  text-decoration: none;
+}
+
 /* оформление хедера */
 
 .logo {
@@ -28,11 +41,13 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
+  letter-spacing: 0.02em;
 }
 .nav-current {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
+  letter-spacing: 0.02em;
   color: var(--color-of-reaction);
 }
 
@@ -41,6 +56,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .link:hover,
 .link:focus {
@@ -53,6 +69,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   color: var(--general-accent-color);
 }
 
@@ -60,6 +77,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   color: var(--general-accent-color);
   background-color: var(--color-of-reaction);
 }
@@ -124,6 +142,7 @@ body {
 .content-title {
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .content-description {
   color: var(--paragraph-color);
