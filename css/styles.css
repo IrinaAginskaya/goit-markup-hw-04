@@ -8,6 +8,16 @@
   --color-of-reaction: #2196f3;
   --paragraph-color: #757575;
 }
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: var(--general-accent-color);
@@ -35,32 +45,17 @@ a {
 }
 
 /* оформление хедера */
-.header {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
 
 nav {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
-
-.list {
+.header {
   display: flex;
   justify-content: space-between;
-}
-
-.contact-list {
-  margin-left: auto;
-}
-.contact-list li {
-  margin-left: 50px;
-  margin-right: 0;
-}
-
-.list-nav li {
-  margin-right: 50px;
+  align-items: baseline;
+  align-items: center;
+  height: 80px;
 }
 
 .logo {
@@ -69,10 +64,19 @@ nav {
   font-size: 26px;
   line-height: 1.2;
   color: var(--color-of-reaction);
-  margin-right: 50px;
+  margin-right: 93px;
+  display: flex;
 }
 
-.nav-due-site {
+.contact-list li {
+  margin-left: 30px;
+}
+
+.list-nav li {
+  margin-right: 30px;
+}
+
+. .nav-due-site {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -101,7 +105,6 @@ nav {
 /* Основная страница */
 .hero {
   background-color: #212121;
-  height: 600px;
 }
 
 .hero-title {
@@ -144,7 +147,6 @@ nav {
 
 /* Основная страница описание деятельности */
 
-}
 .about-us-list {
   font-size: 14px;
   line-height: 1.14;
