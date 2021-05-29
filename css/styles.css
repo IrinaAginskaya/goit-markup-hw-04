@@ -7,7 +7,7 @@
   --general-accent-color: #ffffff;
   --color-of-reaction: #2196f3;
   --paragraph-color: #757575;
-  --card-set-gap: 24px;
+  --card-set-gap: 30px;
 }
 p,
 ul,
@@ -36,7 +36,6 @@ body {
 
 .container {
   width: 1200px;
-  outline: 2px solid tomato;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -68,6 +67,9 @@ nav {
   align-items: center;
   height: 80px;
 }
+header {
+  border-bottom: 1px solid var(--paragraph-color);
+}
 
 .logo {
   font-family: 'Raleway';
@@ -92,6 +94,7 @@ nav {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 .nav-current {
   font-weight: 500;
@@ -100,7 +103,22 @@ nav {
   letter-spacing: 0.02em;
   color: var(--color-of-reaction);
 }
+.link-nav-cur {
+  color: var(--color-of-reaction);
+}
+.link-nav-cur:hover,
+.link-nav-cur:focus {
+  color: var(--color-of-reaction);
+}
 
+.link-nav {
+  color: var(--primary-text-color);
+}
+
+.link-nav:hover,
+.link-nav:focus {
+  color: var(--color-of-reaction);
+}
 .link {
   color: var(--paragraph-color);
   font-weight: 500;
@@ -115,7 +133,7 @@ nav {
 
 /* Основная страница */
 .hero {
-  background-color: #212121;
+  background-color: #2f303a;
 }
 
 .hero .container {
@@ -166,6 +184,7 @@ section.section.hero {
 }
 
 /* Основная страница описание деятельности */
+
 .hide {
   display: none;
 }
@@ -194,6 +213,14 @@ section.section.hero {
 
 /* .about-us-description:last-child {
   padding-right: 0;
+} */
+/* 
+.us-list {
+  display: block;
+}
+
+.us-list:last-child {
+  margin-right: 0;
 } */
 
 .work-title {
@@ -298,7 +325,7 @@ section.section.hero {
 }
 
 .item {
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
