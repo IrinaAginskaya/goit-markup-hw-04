@@ -336,6 +336,7 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .content-description {
   color: var(--paragraph-color);
@@ -344,7 +345,7 @@ header {
 }
 
 .card-content {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 /* оформление подвала */
