@@ -56,7 +56,7 @@ a {
 
 /* оформление хедера */
 
-nav {
+.nav {
   display: flex;
   align-items: center;
 }
@@ -64,10 +64,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
 }
 header {
   border-bottom: 1px solid #ececec;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -82,12 +85,12 @@ header {
 .chn-color {
   color: var(--primary-text-color);
 }
-.contact-list li:not(:first-child) {
+.contact-list-item:not(:first-child) {
   margin-left: 30px;
   align-items: center;
 }
 
-.list-nav li:not(:last-child) {
+.list-nav-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -223,13 +226,13 @@ header {
   margin-right: auto;
   margin-bottom: 50px;
 }
-.work-list > li {
+.work-list-item {
   width: 1170px;
   display: flex;
   justify-content: space-between;
 }
 
-.work-list > li:not(:last-child) {
+.work-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -265,24 +268,26 @@ header {
   text-align: center;
 }
 
-.team-list > li {
-  border-radius: 0px 0px 4px 4px;
+.team-list-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.team-list > li:not(:last-child) {
+.team-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .all-team {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--general-accent-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* кнопки навигации портфолио */
 
 .button-list {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -296,9 +301,10 @@ header {
   border-radius: 4px;
   display: flex;
   justify-content: center;
+  padding: 6px 22px;
 }
 
-.button-list > li:not(:last-child) {
+.button-list-item:not(:last-child) {
   margin-right: 8px;
 }
 .button-portfolio:hover,
@@ -395,9 +401,12 @@ header {
   line-height: 1.7;
   color: var(--general-accent-color);
   display: block;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
+.add-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
 .chn-color-ftr {
   color: var(--color-of-reaction);
 }
