@@ -92,8 +92,8 @@ header {
 }
 .contact-list-item:not(:first-child) {
   margin-left: 30px;
-  align-items: center;
 }
+
 .envelope-item {
   margin-right: 10px;
   cursor: pointer;
@@ -152,6 +152,7 @@ header {
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  cursor: pointer;
 }
 .link:hover,
 .link:focus {
@@ -232,7 +233,15 @@ header {
 .us-list:not(:last-child) {
   margin-right: 30px;
 }
-
+.aboutus-items {
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
 .work {
   padding-top: 0;
 }
@@ -288,6 +297,7 @@ header {
   color: var(--paragraph-color);
   display: block;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .team-list-item {
@@ -305,7 +315,22 @@ header {
   background-color: var(--general-accent-color);
   border-radius: 0px 0px 4px 4px;
 }
+.social-media {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.social-box {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  padding: 12px;}
+  
+.social-box:not(:last-child) {
+  margin-right: 10px;
+}
 
+}
 /* кнопки навигации портфолио */
 
 .button-list {
