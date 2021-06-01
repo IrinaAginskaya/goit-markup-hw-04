@@ -327,14 +327,14 @@ header {
 }
 
 .card-set > .item {
+}
+
+.item {
   justify-content: space-between;
 
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   box-sizing: border-box;
-}
-
-.item {
 }
 
 .content-title {
