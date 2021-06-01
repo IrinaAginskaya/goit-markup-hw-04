@@ -85,9 +85,31 @@ header {
 .chn-color {
   color: var(--primary-text-color);
 }
+
+.contact-list-item {
+  display: flex;
+  align-items: center;
+}
 .contact-list-item:not(:first-child) {
   margin-left: 30px;
   align-items: center;
+}
+.envelope-item {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.envelope-item:hover {
+  fill: var(--color-of-reaction);
+}
+
+.smart-item {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.smart-item:hover {
+  fill: var(--color-of-reaction);
 }
 
 .list-nav-item:not(:last-child) {
