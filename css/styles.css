@@ -331,11 +331,10 @@ header {
 
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
+  box-sizing: border-box;
 }
 
 .item {
-  border-bottom: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 
 .content-title {
@@ -352,6 +351,7 @@ header {
 
 .card-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 /* оформление подвала */
