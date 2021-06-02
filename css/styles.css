@@ -85,7 +85,10 @@ header {
 .chn-color {
   color: var(--primary-text-color);
 }
-
+.contact-list {
+  display: flex;
+  align-items: center;
+}
 .contact-list-item {
   display: flex;
   align-items: center;
@@ -153,6 +156,8 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .link:hover,
 .link:focus {
@@ -320,17 +325,66 @@ header {
   list-style: none;
   justify-content: center;
 }
+
 .social-box {
+  display: inline-block;
   width: 44px;
   height: 44px;
-  background-color: transparent;
-  padding: 12px;}
-  
+  padding: 12px;
+  fill: #afb1b8;
+}
+.social-box:hover,
+.social-box:focus {
+  background-color: var(--color-of-reaction);
+  border-radius: 50%;
+  cursor: pointer;
+  fill: var(--general-accent-color);
+}
+
 .social-box:not(:last-child) {
   margin-right: 10px;
 }
 
+.client-title {
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
 }
+
+.client-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.client-list:hover {
+  cursor: pointer;
+  color: currentColor;
+}
+.client-items {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.company-items {
+  fill: #afb1b8;
+}
+
+.client-items:hover,
+.client-items:focus {
+  border-color: var(--color-of-reaction);
+}
+.company-items:hover,
+.company-items:focus {
+  fill: var(--color-of-reaction);
+}
+
 /* кнопки навигации портфолио */
 
 .button-list {
@@ -458,4 +512,52 @@ header {
 }
 .chn-color-ftr {
   color: var(--color-of-reaction);
+}
+
+.podval-social {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--general-accent-color);
+
+  margin-bottom: 20px;
+}
+
+.podval {
+  display: flex;
+  align-items: baseline;
+}
+.all-adress {
+  margin-right: 70px;
+}
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+}
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+}
+
+/* .social-link:not(:last-child) {
+  margin-right: 10px;
+} */
+
+.podval-social-link {
+  fill: var(--general-accent-color);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-of-reaction);
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
