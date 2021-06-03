@@ -19,6 +19,9 @@ h5 {
   margin: 0;
   padding: 0;
 }
+ul {
+  list-style: none;
+}
 
 img {
   display: block;
@@ -44,7 +47,6 @@ body {
 
 /* убрала маркеры в списках*/
 .list {
-  list-style: none;
   display: flex;
 }
 
@@ -69,8 +71,6 @@ header {
   border-bottom: 1px solid #ececec;
   height: 80px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -99,22 +99,12 @@ header {
 
 .envelope-item {
   margin-right: 10px;
-  cursor: pointer;
-}
-
-.envelope-item:hover,
-.envelope-item:focus {
-  fill: var(--color-of-reaction);
+  /* cursor: pointer; */
 }
 
 .smart-item {
   margin-right: 10px;
-  cursor: pointer;
-}
-
-.smart-item:hover,
-.smart-item:focus {
-  fill: var(--color-of-reaction);
+  /* cursor: pointer; */
 }
 
 .list-nav-item:not(:last-child) {
@@ -164,6 +154,7 @@ header {
 .link:hover,
 .link:focus {
   color: var(--color-of-reaction);
+  fill: var(--color-of-reaction);
 }
 
 /* Основная страница */
@@ -180,6 +171,9 @@ header {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/bigteam.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
 .hero-title {
@@ -207,10 +201,7 @@ header {
   background-color: var(--color-of-reaction);
   padding: 10px 32px;
   border-radius: 4px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* margin-bottom: 200px; */
+  display: inline-block;
 }
 
 .main-button:hover,
@@ -249,13 +240,15 @@ header {
   margin-right: 30px;
 }
 .aboutus-items {
-  display: inline-block;
-  width: 270px;
-  height: 120px;
+  display: flex;
+  justify-content: center;
+  /* display: inline-block; */
+  /* width: 270px; */
+  /* height: 120px; */
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  padding: 25px 0px;
 }
 .work {
   padding-top: 0;
@@ -332,14 +325,14 @@ header {
 }
 .social-media {
   display: flex;
-  list-style: none;
   justify-content: center;
 }
 
 .social-box {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
+  display: flex;
+  justify-content: center;
+  /* width: 44px;
+  height: 44px; */
   padding: 12px;
   fill: #afb1b8;
 }
@@ -367,33 +360,24 @@ header {
 
 .client-list {
   display: flex;
-  list-style: none;
   justify-content: space-between;
 }
-.client-list:hover,
-.client-list:focus {
-  cursor: pointer;
-  color: currentColor;
-}
+
 .client-items {
-  display: block;
-  width: 170px;
-  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  border-color: #afb1b8;
+  fill: #afb1b8;
   padding: 16px 32px;
 }
-.company-items {
-  fill: #afb1b8;
-}
-
 .client-items:hover,
 .client-items:focus {
   border-color: var(--color-of-reaction);
-}
-.company-items:hover,
-.company-items:focus {
   fill: var(--color-of-reaction);
+  cursor: pointer;
 }
 
 /* кнопки навигации портфолио */
@@ -432,8 +416,6 @@ header {
 .card-set {
   padding: 0;
   margin: 0;
-  list-style: none;
-
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
@@ -442,19 +424,19 @@ header {
 
 .item {
   justify-content: space-between;
-
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   box-sizing: border-box;
 }
-
 .item:hover,
 .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .content-title {
+  color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -552,9 +534,10 @@ header {
   justify-content: flex-start;
 }
 .social-link {
-  display: block;
-  width: 44px;
-  height: 44px;
+  display: flex;
+  justify-content: center;
+  /* width: 44px;
+  height: 44px; */
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 12px;
